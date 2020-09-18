@@ -93,7 +93,7 @@ uint32_t Cru2TrackletTranslator::processHBFs()
   LOG(debug) << "--- END PROCESS HBF";
 
   /* move to next RDH */
-  // mDataPointer = (uint32_t*)((char*)(rdh) + o2::raw::RDHUtils::getOffsetToNext(rdh));
+  mDataPointer = (uint32_t*)((char*)(rdh) + o2::raw::RDHUtils::getOffsetToNext(rdh));
 
   /* otherwise return */
 
